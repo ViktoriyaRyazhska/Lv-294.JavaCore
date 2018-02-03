@@ -2,8 +2,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.time.Year;
 
-import javax.xml.crypto.Data;
-
 public class Person {
 	String name;
 	int birthYear;
@@ -11,7 +9,6 @@ public class Person {
 	public Person() {}
 	
 	public Person(String name, int birthYear) {
-		super();
 		this.name = name;
 		this.birthYear = birthYear;
 	}
@@ -38,7 +35,11 @@ public class Person {
 		try {
 			this.setName(reader.readLine());
 			this.setBirthYear(Integer.parseInt(reader.readLine()));
-		}catch(IOException e) {
+		}catch(NumberFormatException e) {
+			System.out.println("Wrong input");
+			e.printStackTrace();;
+		}
+		catch(IOException e) {
 			//DO SOMETHING
 			e.printStackTrace();
 		}

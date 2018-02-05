@@ -19,7 +19,6 @@ public class ConsoleApp {
 		int choice = 0;
 		do {
 			swch = true;
-
 			System.out.println(" -------The Person Console Application Menu ------- :");
 			System.out.println(" 1) Calculate the age of Person :");
 			System.out.println(" 2) Input information about person :");
@@ -32,7 +31,6 @@ public class ConsoleApp {
 			choice = input.menuChoice(0, 4);
 			switch (choice) {
 			case 1:
-
 				System.out.println(" 1) Calculate the age of Person :");
 				System.out.println(" -------------------------------------------------- :");
 				System.out.println("The Person is " + person.age()

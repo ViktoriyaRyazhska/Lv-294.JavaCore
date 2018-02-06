@@ -1,7 +1,11 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		
 		/*
@@ -19,11 +23,27 @@ public class Main {
 			In the method main() create 5 objects of Person type and input information about them.
 		*/
 		
-		Person person1 = new Person("Roman", 1996);
-		Person person2 = new Person("Oleksandr", 1987);
-		Person person3 = new Person("Igor", 1975);
-		Person person4 = new Person("Olga", 1956);
-		Person person5 = new Person("Ivan", 2000);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		Person person1 = new Person();
+		System.out.println("Person1 " + "\nName and year of birth");
+		person1.input(br);
+		
+		Person person2 = new Person();
+		System.out.println("Person2 " + "\nName and year of birth");
+		person2.input(br);
+		
+		Person person3 = new Person();
+		System.out.println("Person3 " + "\nName and year of birth");
+		person2.input(br);
+		
+		Person person4 = new Person();
+		System.out.println("Person4 " + "\nName and year of birth");
+		person4.input(br);
+		
+		Person person5 = new Person();
+		System.out.println("Person5 " + "\nName and year of birth");
+		person5.input(br);
 		
 		person1.output();
 		person2.output();

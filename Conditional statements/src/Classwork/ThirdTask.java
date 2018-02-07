@@ -1,41 +1,39 @@
 package Classwork;
 
-import java.io.BufferedReader;
+import java.io.BufferedReader; 
 import java.io.IOException;
 import java.io.InputStreamReader;
 import Classwork.Continents.*;
 
 public class ThirdTask {
 	private BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-	private Africa af;
+	/*private Africa af;
 	private Asia as;
 	private Australia aus;
 	private Europe eu;
 	private NorthAmerica na;
-	private SouthAmerica su;
+	private SouthAmerica su;*/
 
 	public void doTask() {
 		try {
 			System.out.println("Enter the country");
 			String country = reader.readLine().toUpperCase();
-			System.out.println(country);
-
-			if (af.contains(country)) {
+			if (Africa.contains(country)) {
 				System.out.println("Africa");
 			}
-			if (as.contains(country)) {
+			if (Asia.contains(country)) {
 				System.out.println("Asia");
 			}
-			if (aus.contains(country)) {
+			if (Australia.contains(country)) {
 				System.out.println("Australia");
 			}
-			if (eu.contains(country)) {
+			if (Europe.contains(country)) {
 				System.out.println("Europe");
 			}
-			if (na.contains(country)) {
+			if (NorthAmerica.contains(country)) {
 				System.out.println("North America");
 			}
-			if (su.contains(country)) {
+			if (SouthAmerica.contains(country)) {
 				System.out.println("South America");
 			}
 

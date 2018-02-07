@@ -10,8 +10,8 @@ public class Main {
 		task2.doTask();*/
 		
 		//Third Task doesn't work.I will try to fix it or ask you what the problem is
-		/*ThirdTask task3 = new ThirdTask();
-		task3.doTask();*/
+		ThirdTask task3 = new ThirdTask();
+		task3.doTask();
 		
 		
 	}

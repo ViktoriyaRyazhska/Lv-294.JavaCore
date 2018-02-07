@@ -1,0 +1,5 @@
+package hw04.task2;
+
+public enum Breed {
+	ALASKAN_MALAMUTE, BEAGLE, CANE_CORSO, DALMATIAM, GERMAN_SHEPHERD_DOG;
+}

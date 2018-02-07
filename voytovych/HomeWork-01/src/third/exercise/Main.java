@@ -5,6 +5,12 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		/*
+		 * Phone calls from three different countries are ñ1, ñ2 and ñ3 standard units per minute. 
+		 * Talks continued t1, t2 and t3 minutes. How much computer will count for each call separately 
+		 * and all talk together? Input all source data from console, make calculations and output to the screen.
+		 */
 
 		Scanner input = new Scanner(System.in);
 
@@ -32,15 +38,17 @@ public class Main {
 		double t3 = input.nextDouble(); // obtain user input
 		System.out.println("");
 
-		PhoneCalls calls = new PhoneCalls(c1, c2, c3, t1, t2, t3);
-		calls.countSeparately();
-		double[] s = calls.getSum();
+		PhoneCalls calls1 = new PhoneCalls(c1, t1);
+		PhoneCalls calls2 = new PhoneCalls(c2, t2);
+		PhoneCalls calls3 = new PhoneCalls(c3, t3);
+		
+		
+		System.out.println("Phone calls ¹1 " + calls1.countTogether());
+		System.out.println("Phone calls ¹2 " + calls2.countTogether());
+		System.out.println("Phone calls ¹3 " + calls3.countTogether());
 
-		for (int i = 0; i < s.length; i++) {
-			System.out.println("Phone calls ¹" + (i + 1) + ": " + s[i]);
-		}
 
-		System.out.printf("%nAll sum of talks: [ %.1f ]", calls.countTogether());
+		System.out.printf("%nAll sum of talks: [ %.1f ]", PhoneCalls.getSum());
 
 		input.close();
 	}

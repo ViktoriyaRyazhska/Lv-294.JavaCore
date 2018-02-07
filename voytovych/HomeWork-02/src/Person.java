@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import java.util.Scanner;
 
 public class Person {
 
@@ -58,6 +57,6 @@ public class Person {
 	public void changeName(String newName) {
 		System.out.println("\nYou have been changed name from \"" + name + "\" to new name \"" + newName + "\"");
 		setName(newName);
-		System.out.println("Hello " + newName + "\nThis year you are " + age() + "years old");
+		System.out.println("Hello " + newName + "\nThis year you are " + age() + " years old");
 	}
 }

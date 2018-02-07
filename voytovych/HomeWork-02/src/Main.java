@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
 public class Main {
 
@@ -26,23 +25,23 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		Person person1 = new Person();
-		System.out.println("Person1 " + "\nName and year of birth");
+		System.out.println("Person1 " + "\nEnter name and year of birth");
 		person1.input(br);
 		
 		Person person2 = new Person();
-		System.out.println("Person2 " + "\nName and year of birth");
+		System.out.println("Person2 " + "\nEnter name and year of birth");
 		person2.input(br);
 		
 		Person person3 = new Person();
-		System.out.println("Person3 " + "\nName and year of birth");
+		System.out.println("Person3 " + "\nEnter name and year of birth");
 		person2.input(br);
 		
 		Person person4 = new Person();
-		System.out.println("Person4 " + "\nName and year of birth");
+		System.out.println("Person4 " + "\nEnter name and year of birth");
 		person4.input(br);
 		
 		Person person5 = new Person();
-		System.out.println("Person5 " + "\nName and year of birth");
+		System.out.println("Person5 " + "\nEnter name and year of birth");
 		person5.input(br);
 		
 		person1.output();

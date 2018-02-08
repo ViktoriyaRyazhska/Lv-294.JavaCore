@@ -7,6 +7,13 @@ public class Person {
     private int birthYear;
     private int year;
 
+    /*Додала поле private int year, щоб програма була більш універсальною,
+     бо, наприклад, у випадку, коли людина хоче порахувати скільки їй буде років
+     через десять років, чи скільки було 5 років тому, програма не обчислить,
+     оскільки буде рахувати лише поточний рік*/
+
+    private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
     public Person() {
     }
 
@@ -18,7 +25,6 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
-
 
     public void setYear(int year) {
         this.year = year;
@@ -37,7 +43,6 @@ public class Person {
     }
 
     public void input() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter your name");
         name = br.readLine();
         System.out.println("Enter your birth year");
@@ -50,8 +55,5 @@ public class Person {
         System.out.println("Name is: " + name + ". Person was born in " + birthYear + ". Now is " + year + " year. Age is " + age() + ".");
     }
 
-    public String toString() {
-        return "Name is: " + name + ". Person was born in " + birthYear + ". Now is " + year + " year. Age is " + age() + ".";
-    }
 }
 

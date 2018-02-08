@@ -14,7 +14,12 @@ public class Person {
 
 	public Person(String name, int birthYear) {
 		this.name = name;
+		if((birthYear>2018)||(birthYear<1900)){
+			System.out.println("Wrong format of year of birth");
+			}
+		else{
 		this.birthYear = birthYear;
+	}
 	}
 
 	public String getName() {
@@ -30,9 +35,13 @@ public class Person {
 	}
 
 	public void setBirthYear(int birthYear) {
+		if((birthYear>2018)||(birthYear<1900)){
+			System.out.println("Wrong format of year of birth");
+			}
+		else{
 		this.birthYear = birthYear;
 	}
-	
+	}
 	public int age() {
 		int age=2018-this.birthYear;
 		return age;
@@ -45,7 +54,12 @@ public class Person {
 	}
 	
 	public void output() {
+		if((birthYear>2018)||(birthYear<1900)){
+			System.out.println("Wrong format of year of birth");
+			}
+		else{
 		System.out.println("The name of person is "+ this.name + " and the year of birth is "+this.birthYear + " and age is "+ age() + " years");
+	}
 	}
 	public void changeName(String name) {
 		setName(name);

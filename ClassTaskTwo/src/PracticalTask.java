@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 public class PracticalTask {
     private int number;
     private int countOdd = 0;
-    private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public void inputData() throws IOException {
 

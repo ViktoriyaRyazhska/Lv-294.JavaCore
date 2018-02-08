@@ -8,28 +8,44 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		
-		f1(reader);
-		f2(reader);
-		f3(400);
-	}
 
-	public static void f1(BufferedReader reader) {
-		int a;
+		System.out.println("Task1");
+		
 		for (int i = 0; i < 3; i++) {
 			try {
-				a = Integer.parseInt(reader.readLine());
+				int a = Integer.parseInt(reader.readLine());
+				boolean check = false;
 				if (a >= -5 && a <= 5) {
-					System.out.println("Number a belongs to the range [-5;5]");
+					check = f1(a);
+				}
+				if (check == true) {
+					System.out.println(a + " belongs to the range [-5;5].");
+				} else {
+					System.out.println(a + " doesn't belong to the range [-5;5].");
 				}
 			} catch (NumberFormatException | IOException e) {
 				e.printStackTrace();
 			}
-			
 		}
+
+		System.out.println("Task2");
+
+		int a = f2(reader);
+		System.out.println("Maximum is: " + a);
+
+		System.out.println("Task3");
+
+		System.out.println(f3(401));
 	}
 
-	public static void f2(BufferedReader reader) {
+	public static boolean f1(int a) {
+		if (a >= -5 && a <= 5) {
+			return true;
+		}
+		return false;
+	}
+
+	public static int f2(BufferedReader reader) {
 		int array[] = new int[3];
 		for (int i = 0; i < 3; i++) {
 			try {
@@ -39,22 +55,23 @@ public class Main {
 			}
 		}
 		int max = array[0];
-		for(int i=0;i<array.length;i++) {
+		for (int i = 0; i < array.length; i++) {
 			if (array[i] > max) {
 				max = array[i];
 			}
 		}
-		System.out.println("Maximum: " + max);
+		return max;
 	}
-	
-	public static void f3(int err_code) {
+
+	public static String f3(int err_code) {
 		HTTPError[] errors = HTTPError.values();
-		for(int i = 0; i < errors.length;i++) {
-			if(err_code == errors[i].getCode()) {
+		for (int i = 0; i < errors.length; i++) {
+			if (err_code == errors[i].getCode()) {
 				System.out.println(errors[i].toString());
-				break;
+				return errors[i].toString();
 			}
 		}
+		return "Could'n find the error code";
 	}
 
 }

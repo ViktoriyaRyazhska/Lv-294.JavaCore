@@ -1,14 +1,11 @@
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class Application {
     private float number;
     private int intNumb;
 
-    private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-    public void inputData() throws IOException {
+    public void inputData(BufferedReader br) throws IOException {
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
         int i = 0;
@@ -33,5 +30,4 @@ public class Application {
         System.out.println("Min: " + min);
         System.out.println("Max: " + max);
     }
-
 }

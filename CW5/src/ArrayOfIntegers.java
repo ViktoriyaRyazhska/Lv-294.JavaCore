@@ -36,6 +36,23 @@ public class ArrayOfIntegers {
 		int possum=0;
 		int negsum=0;
 		
+		
+		
+		switch (array[i]) {
+		case "Desember": case "January": case "February":
+			season = Season.WINTER; break;
+		case "Marth": case "April": case "May":
+			season = Season.SPRING; break;
+		case "June": case "Jule": case "August":
+			season = Season.SUMMER; break;
+		case "September": case "October": case "November":
+			season = Season.AUTUMN; break;
+		default:
+
+		
+		
+		
+		
 			if array[i]>0 {
 				posamo++;
 				possum+=array[i];

@@ -7,9 +7,8 @@ public enum HTTPError {
     UNAUTHORISED,
     PAYMENT_REQUIRED,
     NOT_FOUND;
-
+    private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         HTTPError error;
         System.out.println("Enter HTTP status codes");
         int code = Integer.parseInt(br.readLine());

@@ -6,8 +6,9 @@ public class Application {
     private float number;
     private int intNumb;
 
+    private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
     public void inputData() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
         int i = 0;
@@ -31,8 +32,6 @@ public class Application {
         }
         System.out.println("Min: " + min);
         System.out.println("Max: " + max);
-
-
     }
 
 }

@@ -10,7 +10,6 @@ public class Employee {
     public Employee(String name, int rate) {
         this.name = name;
         this.rate = rate;
-
     }
 
     public Employee(String name, int rate, int hours) {
@@ -44,7 +43,7 @@ public class Employee {
         return rate > 5;
     }
 
-    public  double salary() {
+    public double salary() {
         double salary = rate * hours;
         if (hasBonuses()) {
             salary += salary * 0.1;

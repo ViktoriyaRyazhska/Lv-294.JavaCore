@@ -14,7 +14,7 @@ public class FirstTask {
 		int sum = 0;
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] > 0) {
-				sum += 0;
+				sum += array[i];
 			}
 		}
 		return sum;

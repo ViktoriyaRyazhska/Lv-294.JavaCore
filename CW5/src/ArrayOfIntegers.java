@@ -25,40 +25,46 @@ public class ArrayOfIntegers {
 		int max=0;
 		
 		for(int i = 0; i < 10; i++){
+			
+			
 			array[i] = Integer.parseInt(br.readLine());
 			
 			if ((i==0)||(array[i]>max)) {
 				max = array[i];
 			}
 			
+			System.out.println("The biggest number is" + max);			
+			
+			
 		int posamo=0;
 		int negamo=0;
 		int possum=0;
 		int negsum=0;
-		
-		
-		
-		switch (array[i]) {
-		case "Desember": case "January": case "February":
-			season = Season.WINTER; break;
-		case "Marth": case "April": case "May":
-			season = Season.SPRING; break;
-		case "June": case "Jule": case "August":
-			season = Season.SUMMER; break;
-		case "September": case "October": case "November":
-			season = Season.AUTUMN; break;
-		default:
+	
 
-		
-		
-		
-		
-			if array[i]>0 {
+			if (array[i]>0) {
 				posamo++;
 				possum+=array[i];
-				
-				
+			} else if  (array[i]<0) {
+				negamo++;
+				negsum+=array[i];
 			}
+				
+			System.out.println("The sum of POSitive numbers:" + possum);
+			System.out.println("The sum of NEGative numbers:" + negsum);
+			
+			System.out.println("Amount of POSitive numbers:" + posamo);
+			System.out.println("Amount of NEGative numbers:" + negamo);
+			
+			
+			if (posamo>negamo)
+				System.out.println("There are more positive values than negative");
+				else if (posamo==negamo)
+					System.out.println("There are draw amount of positive and negative values");
+					else
+						System.out.println("There are more positive values");	
+				
+		
 			
 			
 		}

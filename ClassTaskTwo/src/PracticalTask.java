@@ -3,12 +3,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class PracticalTask {
-    int number;
-    int countOdd = 0;
-
+    private int number;
+    private int countOdd = 0;
+    private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public void inputData() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         int i = 1;
         System.out.println("Enter three numbers ");
         while (i <= 3) {

@@ -8,10 +8,9 @@ public enum Continent {
     AMERICA,
     EUROPE,
     AUSTRALIA;
-
+    private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Continent continent;
         System.out.println("Enter the name of the country");
         String countryName = br.readLine();

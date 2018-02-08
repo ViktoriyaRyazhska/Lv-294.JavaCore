@@ -3,7 +3,8 @@ package Les3HW3;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class Person {
+public class Person {	
+	
 	
 	private String name;
 	
@@ -64,7 +65,6 @@ public class Person {
 	public void changeName(String name) {
 		setName(name);
 	}
-	
 	
 
 }

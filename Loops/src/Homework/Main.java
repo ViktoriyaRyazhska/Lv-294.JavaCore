@@ -2,10 +2,15 @@ package Homework;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		//f1(10);
+		//f2(reader);
+		
 	}
 
 	public static void f1(int month) {
@@ -44,7 +49,7 @@ public class Main {
 		System.out.println(result);
 	}
 
-	public static void f3_1(BufferedReader reader) {
+	public static void f3(BufferedReader reader) {
 		int[] array = new int[5];
 		int count = 0;
 		int index = 0;
@@ -87,4 +92,13 @@ public class Main {
 		}
 		System.out.println("Product of even number: " + product);
 	}
+	
+	public static void f5(int year, Car[] cars) {
+		for (int i=0;i<cars.length;i++) {
+			if(cars[i].getYear()==year) {
+				System.out.println(cars[i].toString());
+			}
+		}
+	}
+	
 }

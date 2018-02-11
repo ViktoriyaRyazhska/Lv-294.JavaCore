@@ -10,6 +10,8 @@ public class Main {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		//f1(10);
 		//f2(reader);
+		//f3(reader);
+		//f4(reader);
 		
 	}
 
@@ -49,8 +51,11 @@ public class Main {
 		System.out.println(result);
 	}
 
-	public static void f3(BufferedReader reader) {
+	public static void f3(BufferedReader reader) throws NumberFormatException, IOException {
 		int[] array = new int[5];
+		for (int i = 0; i < array.length; i++) {
+			array[i] = Integer.parseInt(reader.readLine());
+		}
 		int count = 0;
 		int index = 0;
 		for (int i = 0; i < array.length; i++) {
@@ -66,7 +71,7 @@ public class Main {
 			System.out.println("Couldn't find two or more positive numbers");
 
 		} else {
-			System.out.println("Position of second positive is" + index);
+			System.out.println("Position of second positive is " + index);
 		}
 
 		// ________________________________________________________________
@@ -90,7 +95,7 @@ public class Main {
 			}
 			input = Integer.parseInt(reader.readLine());
 		}
-		System.out.println("Product of even number: " + product);
+		System.out.println("Product of even numbers: " + product);
 	}
 	
 	public static void f5(int year, Car[] cars) {

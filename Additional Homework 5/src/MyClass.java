@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.Random;
 
 public class MyClass {
@@ -41,7 +42,14 @@ public class MyClass {
 
 		// ____________________________________________________
 
-		f9();
+		//f9();
+		
+		//_____________________________________________________
+		
+		//f10(reader);
+		
+		//_____________________________________________________
+		f11(reader);
 	}
 
 	public static void f1() {
@@ -184,12 +192,58 @@ public class MyClass {
 		{
 		   y = i + Math.cos(y);
 		}
-		
+
 		System.out.println("y = " + y);
 		
 	}
 	
-	public static void f10() {
+	public static void f10(BufferedReader reader) throws NumberFormatException, IOException {
+		System.out.println("Enter n:");
+		double[] array = new double[Integer.parseInt(reader.readLine())];
+		for(int i=0;i<array.length;i++) {
+			array[i] = Double.parseDouble(reader.readLine());
+		}
+		System.out.println("Enter the radius:");
+		double r =  Double.parseDouble(reader.readLine());
+
+		int count = 0;
+		 
+		//coordinates of the center of the circle are (0;0) then:
+		
+		for(int i=0;i<array.length;i++) {
+			if(Math.pow(array[i],2) + Math.pow(array[array.length-1-i], 2) <= Math.pow(r, 2)) {
+				count++;
+			}
+		}
+		System.out.println("Count: " + count);
+	}
+	
+	public static void f11(BufferedReader reader) throws NumberFormatException, IOException {
+		System.out.println("Enter n: ");
+		double[] t = new double[Integer.parseInt(reader.readLine())];
+		System.out.println("Enter time :");
+		for(int i=0;i<t.length;i++) {
+			t[i] = Double.parseDouble(reader.readLine());
+		}
+		
+		double[] mass = new double[t.length];
+		/*for(int i=0;i<t.length;i++) {
+			mass[i] = 0;
+		}*/
+		for(int i = t.length - 1; i >= 0; i--) {
+			double sum = 0;
+			for(int j = t.length - 1; j >= i; j--) {
+				sum += t[j]; 
+			}
+			mass[i] = sum;
+		}
+		
+		System.out.println("Time in the queue: ");
+		for(int i=0;i<t.length;i++) {
+			System.out.print(mass[i] +" ");
+		}
+		
+		
 		
 	}
 

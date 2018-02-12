@@ -1,15 +1,15 @@
-                     HW3    HW4
-                    class    if
+                     HW3    HW4   HW5
+                    class    if  loops
 
-Ira Shturyn           +
-Sydoriv               +       +
-Yura Mazur            +       +
+Ira Shturyn           +       +    +
+Maxym Sydoriv         +       +    +
+Yura Mazur            +       +    +
 Voytovych             +       +
-Mykola Boieru         +
+Mykola Boieru         +       +    +
 Rostyslav Beregiy     +
-Mariia Oleksiuk       +
+Mariia Oleksiuk       +       +
 Halyna Monastyrska    +
 Saakyan               +
-Vlad Podolin          +
-Yuriy Paliy           +
-Sasha Kryklyvets      +
+Vlad Podolin          +       +
+Yuriy Paliy           +       +
+Sasha Kryklyvets      +             +

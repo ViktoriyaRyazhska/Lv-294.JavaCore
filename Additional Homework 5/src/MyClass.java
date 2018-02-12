@@ -7,6 +7,7 @@ import java.util.Random;
 public class MyClass {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
+		//Номер методу = номеру завдання
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		// ___________________________________________________
 
@@ -14,15 +15,12 @@ public class MyClass {
 
 		// ___________________________________________________
 
-		/*
-		 * double[] b = new double[5]; Random rand = new Random(); for(int i=0;i <
-		 * b.length;i++) { b[i] = rand.nextInt(10) + 1; System.out.print(b[i] + " "); }
-		 * f3(b);
-		 */
+		 //f2();
+		 
 
 		// ___________________________________________________
 
-		// f2();
+		// f3();
 
 		// ___________________________________________________
 
@@ -38,18 +36,25 @@ public class MyClass {
 
 		// ____________________________________________________
 
-		//f8(180, 56);
+		// f8(180, 56);
 
 		// ____________________________________________________
 
-		//f9();
+		// f9();
+
+		// _____________________________________________________
+
+		// f10(reader);
+
+		// _____________________________________________________
 		
-		//_____________________________________________________
+		//f11(reader);
 		
-		//f10(reader);
+		//______________________________________________________
 		
-		//_____________________________________________________
-		f11(reader);
+		//f12(reader);
+		
+		//______________________________________________________
 	}
 
 	public static void f1() {
@@ -69,7 +74,12 @@ public class MyClass {
 		}
 	}
 
-	public static void f3(double[] b) {
+	public static void f3() {
+		System.out.println("Array b:");
+		double[] b = new double[30]; Random rand = new Random(); 
+		for(int i=0;i <b.length;i++) { 
+			b[i] = rand.nextInt(10) + 1; System.out.print(b[i] + " ");
+		}
 		double a = 0;
 		double sum = 0;
 		for (int i = 0; i < b.length; i++) {
@@ -79,18 +89,18 @@ public class MyClass {
 				sum += Math.pow(((double) ((i / 2)) - b[i]), 2);
 			}
 		}
-		System.out.println(sum);
+		System.out.println("\nThe sum is: " + sum);
 	}
 
 	public static void f4(BufferedReader reader) {
 		double[] array;
 		double[] result;
-		System.out.println("Enter amount:");
+		System.out.println("Enter the amount:");
 		try {
 			int n = Integer.parseInt(reader.readLine());
 			array = new double[n];
 			result = new double[n];
-			System.out.println("Enter data in array:");
+			System.out.println("Enter data in the array:");
 			for (int i = 0; i < array.length; i++) {
 				array[i] = Double.parseDouble(reader.readLine());
 				double sum = 0;
@@ -108,6 +118,7 @@ public class MyClass {
 	}
 
 	public static void f5(BufferedReader reader) throws NumberFormatException, IOException {
+		System.out.println("Enter the length of each side:");
 		double[] sides = new double[3];
 		for (int i = 0; i < sides.length; i++) {
 			double side = Double.parseDouble(reader.readLine());
@@ -188,63 +199,101 @@ public class MyClass {
 
 	public static void f9() {
 		double y = 40;
-		for (int i = 39; i >= 0; --i)
-		{
-		   y = i + Math.cos(y);
+		for (int i = 39; i >= 0; --i) {
+			y = i + Math.cos(y);
 		}
 
 		System.out.println("y = " + y);
-		
+
 	}
-	
+
 	public static void f10(BufferedReader reader) throws NumberFormatException, IOException {
 		System.out.println("Enter n:");
 		double[] array = new double[Integer.parseInt(reader.readLine())];
-		for(int i=0;i<array.length;i++) {
+		for (int i = 0; i < array.length; i++) {
 			array[i] = Double.parseDouble(reader.readLine());
 		}
 		System.out.println("Enter the radius:");
-		double r =  Double.parseDouble(reader.readLine());
+		double r = Double.parseDouble(reader.readLine());
 
 		int count = 0;
-		 
-		//coordinates of the center of the circle are (0;0) then:
-		
-		for(int i=0;i<array.length;i++) {
-			if(Math.pow(array[i],2) + Math.pow(array[array.length-1-i], 2) <= Math.pow(r, 2)) {
+
+		// coordinates of the center of the circle are (0;0) then:
+
+		for (int i = 0; i < array.length; i++) {
+			if (Math.pow(array[i], 2) + Math.pow(array[array.length - 1 - i], 2) <= Math.pow(r, 2)) {
 				count++;
 			}
 		}
 		System.out.println("Count: " + count);
 	}
-	
+
 	public static void f11(BufferedReader reader) throws NumberFormatException, IOException {
-		System.out.println("Enter n: ");
+		System.out.println("Enter the amount of people: ");
 		double[] t = new double[Integer.parseInt(reader.readLine())];
-		System.out.println("Enter time :");
-		for(int i=0;i<t.length;i++) {
+		System.out.println("Enter time for each person: ");
+		for (int i = 0; i < t.length; i++) {
 			t[i] = Double.parseDouble(reader.readLine());
 		}
-		
+
 		double[] mass = new double[t.length];
-		/*for(int i=0;i<t.length;i++) {
-			mass[i] = 0;
-		}*/
-		for(int i = t.length - 1; i >= 0; i--) {
+		/*
+		 * for(int i=0;i<t.length;i++) { mass[i] = 0; }
+		 */
+		for (int i = t.length - 1; i >= 0; i--) {
 			double sum = 0;
-			for(int j = t.length - 1; j >= i; j--) {
-				sum += t[j]; 
+			for (int j = t.length - 1; j >= i; j--) {
+				sum += t[j];
 			}
 			mass[i] = sum;
 		}
-		
+
 		System.out.println("Time in the queue: ");
-		for(int i=0;i<t.length;i++) {
-			System.out.print(mass[i] +" ");
+		for (int i = 0; i < t.length; i++) {
+			System.out.print(mass[i] + " ");
 		}
-		
-		
-		
+		System.out.println("\nPerson with the least time of service;");
+		System.out.println(min(t));
 	}
 
+	public static double min(double[] array) {
+		double min = array[0];
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] < min) {
+				min = array[i];
+			}
+		}
+		return min;
+	}
+
+	public static double max(double[] array) {
+		double max = array[0];
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] > max) {
+				max = array[i];
+			}
+		}
+		return max;
+	}
+
+	public static void f12(BufferedReader reader) throws NumberFormatException, IOException {
+		System.out.println("Enter the amount of judges.");
+		double[] judges = new double[Integer.parseInt(reader.readLine())];
+		System.out.println("Input marks for the member");
+		for (int i = 0; i < judges.length; i++) {
+			judges[i] = Double.parseDouble(reader.readLine());
+		}
+
+		double maxMark = max(judges);
+		double minMark = min(judges);
+		double sum = 0;
+		double count = 0;
+		for (int i = 0; i < judges.length; i++) {
+			if (judges[i] != maxMark && judges[i] != minMark) {
+				sum +=judges[i];
+				count++;
+			}
+		}
+		System.out.println("Final marks  |" + maxMark + "|" + minMark + "|" + sum/count + "|");
+	}
 }

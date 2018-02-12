@@ -30,25 +30,23 @@ public class Main {
 			array[i] = Integer.parseInt(reader.readLine());
 		}
 		boolean isPositive = true;
+		int product = 1;
+		int sum = 0;
 		for (int i = 0; i < array.length / 2; i++) {
+			product *=array[array.length-1 -i];
 			if (array[i] < 0) {
 				isPositive = false;
-				break;
 			}
+			if(isPositive == false) {
+				continue;
+			}
+			sum+=array[i];
 		}
-		int result = 0;
-		if (isPositive == true) {
-			result = 0;
-			for (int i = 0; i < array.length / 2; i++) {
-				result += array[i];
-			}
-		} else {
-			result = 1;
-			for (int i = array.length / 2 - 1; i < array.length; i++) {
-				result *= array[i];
-			}
+		if(isPositive) {
+			System.out.println("Sum:" + sum);
+		}else {
+			System.out.println("Product:" + product);
 		}
-		System.out.println(result);
 	}
 
 	public static void f3(BufferedReader reader) throws NumberFormatException, IOException {

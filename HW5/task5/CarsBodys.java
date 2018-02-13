@@ -1,0 +1,5 @@
+package hw05.task5;
+
+public enum CarsBodys {
+	SEDAN, COUPE, HATCHBACK, MINIVAN, TRUCK, STATION_WAGON, CONVERTIBLE, MUV;
+}

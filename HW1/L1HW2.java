@@ -1,4 +1,4 @@
-package lesson1;
+package Les1HW1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,13 +7,12 @@ import java.io.InputStreamReader;
 public class L1HW2 {
 
 	public static void main(String[] args) throws IOException {
-		BufferedReader br= new BufferedReader(
-				new InputStreamReader(System.in));
-		System.out.println("what is your name");
-		String name = br.readLine();
+		BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("What is your name?");
+		String name = b.readLine();
 		System.out.println("Where are you live, "+ name);
-		String adress=br.readLine();
-		System.out.println("Your name is "+ name+ " and your adress is "+ adress);
+		String adress = b.readLine();
+		System.out.println("You are "+ name+ " and you live in "+ adress);
 
 	}
 

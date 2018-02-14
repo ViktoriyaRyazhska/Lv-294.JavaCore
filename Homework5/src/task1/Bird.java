@@ -1,21 +1,18 @@
 package task1;
 
 public abstract class Bird {
+    public String feathers;
+    public int layEggs;
+
     public Bird(String feathers, int layEggs) {
         this.feathers = feathers;
         this.layEggs = layEggs;
     }
 
-    public String getFeathers() {
-        return feathers;
-    }
-
-    public int getLayEggs() {
-        return layEggs;
-    }
-
-    public String feathers;
-    public int layEggs;
-
     abstract boolean fly();
+
+    @Override
+    public String toString() {
+        return " feathers is " + feathers + ", it produces " + layEggs + " eggs. It can fly: ";
+    }
 }

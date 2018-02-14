@@ -27,7 +27,7 @@ public class Runner {
             }
         }
         for (int i = 0; i < employees.length; i++) {
-            System.out.println("Worker name is " + employees[i].getName() + ". ID is " + employees[i].getId() + ". Person get salary " + ((Company) employees[i]).calculatePay());
+            System.out.println( employees[i].toString() + ((Company) employees[i]).calculatePay());
         }
 
 

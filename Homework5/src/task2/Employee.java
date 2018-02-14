@@ -5,19 +5,15 @@ public class Employee {
     private int id;
 
     public Employee() {
-
     }
 
-    public String getName() {
-        return name;
+    @Override
+    public String toString() {
+        return "Worker name is " + name + ". ID is " + id + ". Person get salary ";
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public void setId(int id) {

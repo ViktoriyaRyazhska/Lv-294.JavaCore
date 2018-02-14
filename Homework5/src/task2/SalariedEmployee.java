@@ -12,7 +12,6 @@ public class SalariedEmployee extends Employee implements Company {
         this.rate = rate;
     }
 
-
     @Override
     public int calculatePay() {
         return rate * time;

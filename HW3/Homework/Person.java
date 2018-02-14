@@ -8,10 +8,10 @@ import java.util.GregorianCalendar;
 
 
 public class Person {
+	
 	private String name;
 	private int birthYear;
 	private int sex;
-	
 
 	public Person() {
 	}
@@ -45,11 +45,11 @@ public class Person {
 		this.sex = sex;
 	}
 	
+	
 	GregorianCalendar calendar = new GregorianCalendar(2018, Calendar.FEBRUARY, 9);
-	int year = calendar.get(Calendar.YEAR);
 
 	public int age() {
-		return year - getBirthYear();
+		return calendar.getWeekYear() - getBirthYear();
 	}
 
 	public void input() throws IOException {

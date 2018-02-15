@@ -1,5 +1,5 @@
 package birds;
 
-public class Chicken {
+public class Chicken extends NonFlyingBird {
 
 }

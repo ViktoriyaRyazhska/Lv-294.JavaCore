@@ -1,5 +1,5 @@
 package birds;
 
-public class Eagle {
+public class Eagle extends FlyingBird {
 
 }

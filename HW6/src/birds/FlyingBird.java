@@ -1,6 +1,6 @@
 package birds;
 
-public abstract class FlyingBird {
+public abstract class FlyingBird extends Bird {
 
 
 

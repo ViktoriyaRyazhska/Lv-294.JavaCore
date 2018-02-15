@@ -9,16 +9,15 @@ Display the name and the kind of the oldest dog.
 public class Dog {
 	
 	private String name;
-	public enum breed {
+	public enum Breed {
 		male, female
 	}
 	private int age;
+	private static Breed breed;
 	
 	private static int oldest=0;
 	private static String oname;
-	private static enum obreed {
-		male, female
-	}
+	private static Breed obreed; 
 	
 	@Override
 	public boolean equals(Object obj) {

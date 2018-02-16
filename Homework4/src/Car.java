@@ -1,5 +1,5 @@
 public class Car {
-   private String type;
+    private String type;
     private int year;
     private int engine;
 
@@ -13,12 +13,8 @@ public class Car {
         return year;
     }
 
-    public void setYear(int year) {
-        this.year = year;
-    }
-
     @Override
     public String toString() {
-        return "Car type is "+ type+ ". It was produced in "+year+", engine capacity is "+engine;
+        return "Car type is " + type + ". It was produced in " + year + ", engine capacity is " + engine;
     }
 }

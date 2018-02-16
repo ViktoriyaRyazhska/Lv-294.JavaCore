@@ -1,81 +1,58 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("---1---");
-        System.out.print("Enter the number of month. ");
-        int monthNumber = Integer.parseInt(br.readLine());
         int month_days[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-        for (int i = 0; i < month_days.length; i++) {
-            if (i == monthNumber - 1) {
-                System.out.println("There are " + month_days[i] + " days.");
-            }
-        }
+        getAmountOfDay(month_days, br);
 
         System.out.println("---2---");
-        System.out.println("Enter 10 int numbers. ");
         int[] tenInt = new int[10];
+        sumOrProduct(tenInt, br);
+
+        System.out.println("---3---");
+        int[] fiveInt = new int[5];
+        secondPositiveNumb(fiveInt, br);
+
+        System.out.println("---4---");
+        tillFirstNegativeNumb(br);
+    }
+
+    public static void getAmountOfDay(int[] arr, BufferedReader br) throws IOException {
+        System.out.print("Enter the number of month. ");
+        int monthNumber = Integer.parseInt(br.readLine());
+        for (int i = 0; i < arr.length; i++) {
+            if (i == monthNumber - 1) {
+                System.out.println("There are " + arr[i] + " days.");
+            }
+        }
+    }
+
+    public static void sumOrProduct(int[] tenInt, BufferedReader br) throws IOException {
+        int result = 0;
+
+        System.out.println("Enter 10 int numbers. ");
         for (int i = 0; i < tenInt.length; i++) {
             tenInt[i] = Integer.parseInt(br.readLine());
         }
-        boolean positiveNumb = true;
-        int sum = 0;
-        int product = 1;
+
         for (int i = 0; i < tenInt.length / 2; i++) {
-            if (tenInt[i] < 0) {
-                positiveNumb = false;
+            if (tenInt[i] > 0) {
+                result += tenInt[i];
+            } else {
+                result = 1;
+                for (int j = tenInt.length / 2; j < tenInt.length; j++) {
+                    result *= tenInt[j];
+                }
                 break;
             }
         }
-        if (positiveNumb) {
-            for (int i = 0; i < tenInt.length / 2; i++) {
-                sum += tenInt[i];
-            }
-        } else {
-            for (int i = 5; i < tenInt.length; i++) {
-                product *= tenInt[i];
-            }
-        }
-        int result = positiveNumb ? sum : product;
         System.out.println(result);
+    }
 
-
-        System.out.println("---3---");
-        System.out.println("Enter 5 int numbers. ");
-        int[] fiveInt = new int[5];
-        int count = 0;
-        int position = 0;
-        for (int i = 0; i < fiveInt.length; i++) {
-            fiveInt[i] = Integer.parseInt(br.readLine());
-        }
-        for (int i = 0; i < fiveInt.length; i++) {
-            if (fiveInt[i] > 0) {
-                count++;
-                position = i;
-            }
-            if (count == 2) {
-                break;
-            }
-        }
-        if (!(count == 1 || count == 0)) {
-            System.out.println("Position of second positive number is " + position+1);
-        }
-        int min = fiveInt[0];
-        int imin = 0;
-        int i = 0;
-        while (i < fiveInt.length) {
-            if (fiveInt[i] < min) {
-                min = fiveInt[i];
-                imin = i;
-            }
-            i++;
-        }
-        System.out.println("Minimum = " + min + " is in " + (imin + 1) + " place");
-
-        System.out.println("---4---");
+    public static void tillFirstNegativeNumb(BufferedReader br) throws IOException {
+        System.out.println("Enter  integers until the first negative number.");
         int number = Integer.parseInt(br.readLine());
         int multiplication = 1;
         while (number > 0) {
@@ -86,4 +63,43 @@ public class Main {
         }
         System.out.println("Product = " + multiplication);
     }
+
+    public static void secondPositiveNumb(int arr[], BufferedReader br) throws IOException {
+        System.out.println("Enter 5 int numbers. ");
+        int count = 0;
+        int position = 0;
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = Integer.parseInt(br.readLine());
+        }
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                count++;
+                position = i;
+            }
+            if (count == 2) {
+                break;
+            }
+        }
+        if (!(count == 1 || count == 0)) {
+            position++;
+            System.out.println("Position of second positive number is " + position);
+        }
+        minFiveNumb(arr);
+    }
+
+    public static void minFiveNumb(int[] arr) {
+        int min = arr[0];
+        int imin = 0;
+        int i = 0;
+        while (i < arr.length) {
+            if (arr[i] < min) {
+                min = arr[i];
+                imin = i;
+            }
+            i++;
+        }
+        System.out.println("Minimum = " + min + " is in " + (imin + 1) + " place");
+    }
+
+
 }

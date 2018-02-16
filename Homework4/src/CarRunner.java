@@ -8,12 +8,28 @@ public class CarRunner {
         car[1] = new Car("crossover", 2000, 150);
         car[2] = new Car("sports car", 2010, 200);
         car[3] = new Car("hybrid", 2004, 170);
-        System.out.println("---1---");
-        for (int i = 0; i < car.length; i++) {
-            System.out.println(car[i]);
-        }
 
+        System.out.println("---1---");
+        printCar(car);
+//        for (int i = 0; i < car.length; i++) {
+//            System.out.println(car[i]);
+//        }
         System.out.println("---2---");
+        carYear(car, scanner);
+
+        System.out.println("---3---");
+        sortCar(car, scanner);
+    }
+
+    public static void printCar(Car[] car) {
+
+        for (Car printCar : car) {
+            System.out.println(printCar);
+
+        }
+    }
+
+    public static void carYear(Car[] car, Scanner scanner) {
         System.out.println("Enter car year");
         int year = scanner.nextInt();
         for (int i = 0; i < car.length; i++) {
@@ -21,8 +37,9 @@ public class CarRunner {
                 System.out.println(car[i]);
             }
         }
+    }
 
-        System.out.println("---3---");
+    public static void sortCar(Car[] car, Scanner scanner) {
         Car tmp;
         for (int i = 0; i < car.length - 1; i++) {
             for (int j = i + 1; j < car.length; j++) {
@@ -33,9 +50,7 @@ public class CarRunner {
                 }
             }
         }
-        for (int i = 0; i < car.length; i++) {
-            System.out.println(car[i]);
-        }
-
+        printCar(car);
     }
+
 }

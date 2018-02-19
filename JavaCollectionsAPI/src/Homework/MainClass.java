@@ -1,14 +1,36 @@
 package Homework;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 public class MainClass {
 
 	public static void main(String[] args) {
-		f2();
+		
+		List<Student> students = new LinkedList<Student>();
+		students.add(new Student("Vasya", 1));
+		students.add(new Student("Igor", 2));
+		students.add(new Student("Olena",2));
+		students.add(new Student("Ylya", 3));
+		students.add(new Student("Oleg", 4));
+		
+		System.out.println("\nSorted by name:");
+		Collections.sort(students, Student.getSortbyName());
+		students.forEach(student->{
+			System.out.println(student);
+		});
+		
+		System.out.println("\nSorted by course:");
+		Collections.sort(students, Student.getSortbyCourse());
+		students.forEach(student->{
+			System.out.println(student);
+		});
+		
 	}
 	
 	public static void f1() {

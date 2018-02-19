@@ -15,7 +15,7 @@ public class Main {
 		
 		for(Bird i : b) {
 			i.fly();
-			System.out.println(i.toString());
+			System.out.println(i);
 		}
 	}
 }

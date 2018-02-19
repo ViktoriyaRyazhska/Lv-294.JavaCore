@@ -21,9 +21,8 @@ public class Main {
 				}
  			}
 		}
-		for(int i = 0; i < em.length; i++) {
-			System.out.println("Employee ID = " + em[i].getEmployeeId() + " [name = " + em[i].getName()
-					+ ", salary = " + ((CalculatePay)em[i]).calculatePay() + "]");
+		for(Employee e : em) {
+			System.out.println(e.toString());
 		}
 	}
 

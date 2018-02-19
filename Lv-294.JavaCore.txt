@@ -1,15 +1,15 @@
                      HW3    HW4   HW5   HW6     HW7      HW8
                     class    if  loops  OOP  Collection String 
 
-Ira Shturyn           +       +    +     +
-Maxym Sydoriv         +       +    +     .
-Yura Mazur            +       +    +     +
-Voytovych             +       +    +     +        +
-Mykola Boieru         +       +    +     +
-Rostyslav Beregiy     +            +
-Mariia Oleksiuk       +       +    +     +
+Ira Shturyn           +       +    +     +        +
+Maxym Sydoriv         +       +    +     .        +
+Yura Mazur            +       +    +     +        +
+Voytovych             +       +    +     +        +        +
+Mykola Boieru         +       +    +     +        +
+Rostyslav Beregiy     +            +     +
+Mariia Oleksiuk       +       +    +     +        +
 Halyna Monastyrska    +
 Saakyan               +
-Vlad Podolin          +       +
+Vlad Podolin          +       +     +
 Yuriy Paliy           +       +     +
-Sasha Kryklyvets      +             +
+Sasha Kryklyvets      +             +             .

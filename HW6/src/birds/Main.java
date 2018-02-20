@@ -1,6 +1,7 @@
 package birds;
 
-public class Appl {
+public class Main {
+
 public static void main(String[] args) {
 		
 		Bird [] birds = new Bird[5];

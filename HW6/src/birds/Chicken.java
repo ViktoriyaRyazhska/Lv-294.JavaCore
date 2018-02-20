@@ -5,7 +5,7 @@ public class Chicken extends NonFlyingBird {
 	public void fly () {
 		this.feathers =" various ";
 		this.layEggs = " up to 5, middle size ";
-		System.out.println(Chicken.class.getSimpleName() + " This bird flying very badly!"
+		System.out.println(Chicken.class.getSimpleName() + " This bird flying very badly! "
 	+ this.toString());
 	}
 }

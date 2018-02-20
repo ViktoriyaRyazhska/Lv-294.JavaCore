@@ -21,26 +21,27 @@ public class c3SecondPositive {
 		
 		int min= Integer.MAX_VALUE;
 		
+		boolean is_first_positive = false;
+		
 		for (int i=0; i<=4 ; i++) {
+			
 			System.out.println("Please, enter the " + (i+1) + " number:");
 			integers[i] = Integer.parseInt(br.readLine());
 			
-			boolean is_first_positive = false;
-			
 			if ((integers[i]>0) && (is_first_positive==false)) 
 				is_first_positive=true;
-			 else if (is_first_positive==true) {
+			 else if ((integers[i]>0) && (is_first_positive==true)) {
 				second_positive_position=i;
 				System.out.println("The position of 2nd positive number is: " + (i+1));
 			}
 			
 
 			if (i==0) 
-				min=integers[i]; // min initialized in 22 line. everything okay 
+				min=integers[i]; 
 			
-			if 	(integers[i] < min) { // min not initialized. access modifiers? local variables in-cycle?
+			if 	(integers[i] < min) { 
 				min=integers[i];
-				min_position=i;	
+				min_position=i+1;	
 			}
 		}
 		

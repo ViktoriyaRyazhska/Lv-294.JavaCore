@@ -19,7 +19,7 @@ public class c3SecondPositive {
 
 		int min_position=-1;
 		
-		int min;
+		int min= Integer.MAX_VALUE;
 		
 		for (int i=0; i<=4 ; i++) {
 			System.out.println("Please, enter the " + (i+1) + " number:");

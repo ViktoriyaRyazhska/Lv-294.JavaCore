@@ -17,12 +17,12 @@ public class Runner {
         System.out.println("-------Students ordered by name-------");
         studentList.sort(new Student.NameComparator());
         for (Student student : studentList) {
-            System.out.println(student.toString());
+            System.out.println(student);
         }
         System.out.println("------Students ordered by course------");
         studentList.sort(new Student.CourseComparator());
         for (Student student : studentList) {
-            System.out.println(student.toString());
+            System.out.println(student);
         }
     }
 }

@@ -60,8 +60,7 @@ public class Student {
         while (iterator.hasNext()) {
             Student student = (Student) iterator.next();
             if (student.getCourse() == course) {
-                System.out.println("Student's name is " + student.getName() +
-                        ", has " + student.getCourse() + " courses.");
+                System.out.println(student);
             }
         }
     }

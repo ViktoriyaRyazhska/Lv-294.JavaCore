@@ -15,23 +15,32 @@ package birds;
 
 public abstract class Bird {
 		
-	private String feathers;
-	private int layEggs;
+	public String feathers;
+	public String layEggs;
 	
-	public void fly () {
-		
-	}
+	public abstract void fly ();
 	
+	@Override
+	public String toString() {
+		String output = "Feathers: " + this.feathers + " Eggs: " + this.layEggs;  	
+		return output;
+	};
 	
+
 	public static void main(String[] args) {
 		
 		Bird [] birds = new Bird[5];
+		
 		 birds[0] = new Penguin();
 		 birds[1] = new Swallow();
 		 birds[2] = new Chicken();
 		 birds[3] = new Penguin();
 		 birds[4] = new Eagle();
-		 birds[1].fly();
-	}
-
+		
+		for (int i=0;i==5;i++) {
+		 birds[i].fly();
+	}	
 }
+	
+}
+

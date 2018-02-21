@@ -1,5 +1,5 @@
                      HW3    HW4   HW5   HW6     HW7      HW8      HW9
-                    class    if  loops  OOP  Collection String  Exeption
+                    class    if  loops  OOP  Collection String  Exception
 
 Ira Shturyn           +       +    +     +        +        +
 Maxym Sydoriv         +       +    +     .        +

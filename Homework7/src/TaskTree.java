@@ -12,11 +12,11 @@ public class TaskTree {
         Matcher m = p.matcher(money);
 
         if (m.matches()) {
-            System.out.print("Entered US currency: ");
+            System.out.println("Entered US currency: ");
             m.reset();
-            System.out.println(money);
-        } else {
-            System.out.print("Sorry you entered wrong data");
+        }
+        while (m.find()) {
+            System.out.println(money.substring(m.start(), m.end()));
         }
     }
 

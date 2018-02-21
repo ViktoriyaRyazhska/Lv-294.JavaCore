@@ -4,12 +4,14 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.attribute.AclEntry.Builder;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MyClass {
 
 	public static void main(String[] args) {
 		BufferedReader reader  =  new BufferedReader(new InputStreamReader(System.in));
-		f2(reader);
+		f3(reader);
 	}
 	
 	public static void f1(BufferedReader reader) {
@@ -36,7 +38,6 @@ public class MyClass {
 			}
 			System.out.println(builder.toString());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -48,10 +49,25 @@ public class MyClass {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}		
+	}
+	
+	public static void f3(BufferedReader reader) {
+		Pattern p = Pattern.compile("\\$(\\d*)(\\.\\d{2})?");
+		String text = "";
+		for(int i =0;i<5;i++) {
+			try {
+				text = reader.readLine();
+				Matcher m = p.matcher(text);
+				if(m.matches()) {
+					System.out.println("Valid");
+				}else {System.out.println("not valid");}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 		
 	}
 	
 	
-
 }

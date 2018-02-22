@@ -2,6 +2,8 @@ package Classwork;
 
 public class TypeException extends Exception{
 
+	private String message = "TypeException";
+	
 	public TypeException() {
 		super();
 	}
@@ -12,6 +14,11 @@ public class TypeException extends Exception{
 
 	public TypeException(String arg0) {
 		super(arg0);
+	}
+	
+	@Override
+	public String getMessage() {
+		return message;
 	}
 	
 }

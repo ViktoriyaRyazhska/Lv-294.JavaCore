@@ -6,35 +6,68 @@ public class Plant {
 	double size;
 
 	public Plant(String color, String type, double size) throws ColorException, TypeException {
-		this.color = parseColor(color);
-		this.type = parseType(type);
+		this.color = Color.getColor(color);
+		this.type = Type.getType(type);
 		this.size = size;
 	}
 
-	private static Color parseColor(String color) throws ColorException {
-		String obj = color.toUpperCase();
-		switch (obj) {
-		case "RED":
-			return Color.RED;
-		case "BLUE":
-			return Color.WHITE;
-		case "WHITE":
-			return Color.WHITE;
-		default: throw new ColorException();
-		}
+	public String getColor() {
+		return color.name();
 	}
-	
-	private static Type parseType(String type) throws TypeException {
-		String obj = type.toUpperCase();
-		switch (obj) {
-		case "LILY":
-			return Type.LILY;
-		case "ASTER":
-			return Type.ASTER;
-		case "BEGONIA":
-			return Type.BEGONIA;
-		default: throw new TypeException();
-		}
+
+	public void setColor(String color) throws ColorException {
+		this.color = Color.getColor(color);
+	}
+
+	public String getType() {
+		return type.name();
+	}
+
+	public void setType(String type) throws TypeException {
+		this.type = Type.getType(type);
+	}
+
+	public double getSize() {
+		return size;
+	}
+
+	public void setSize(double size) {
+		this.size = size;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((color == null) ? 0 : color.hashCode());
+		long temp;
+		temp = Double.doubleToLongBits(size);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = prime * result + ((type == null) ? 0 : type.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Plant other = (Plant) obj;
+		if (color != other.color)
+			return false;
+		if (Double.doubleToLongBits(size) != Double.doubleToLongBits(other.size))
+			return false;
+		if (type != other.type)
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "[Type:" + type.name() + "|Color:" + color.name() + "|Size:" + size + "]";
 	}
 
 }

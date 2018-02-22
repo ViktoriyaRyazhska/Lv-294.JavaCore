@@ -1,6 +1,9 @@
 package Classwork;
 
 public class NegativeSquareException extends Exception{
+	
+	String message = "Negative square";
+	
 	public NegativeSquareException() {
 		super();
 	}
@@ -12,6 +15,11 @@ public class NegativeSquareException extends Exception{
 	public NegativeSquareException(Throwable arg0) {
 		super(arg0);
 	}
+
+	public String getMessage() {
+		return message;
+	}
+
 	
 
 }

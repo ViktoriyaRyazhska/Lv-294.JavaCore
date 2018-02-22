@@ -39,7 +39,7 @@ public class Main {
 		Employee tmp;
 	        for (int i = 0; i < employees.length - 1; i++) {
 	            for (int j = i + 1; j < employees.length; j++) {
-	                if ((employees[i]).calculatePay() < employees[j].calculatePay()) {
+	                if (employees[i].calculatePay() < employees[j].calculatePay()) {
 	                    tmp = employees[i];
 	                    employees[i] = employees[j];
 	                    employees[j] = tmp;

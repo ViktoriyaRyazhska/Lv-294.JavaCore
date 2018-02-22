@@ -24,7 +24,7 @@ public class Rectangle {
 		if(a >= 0 && b>=0) {
 			return a*b;
 		}else {
-			throw new NegativeSquareException("One of the numbers is negative!");
+			throw new NegativeSquareException();
 		}
 	}
 }

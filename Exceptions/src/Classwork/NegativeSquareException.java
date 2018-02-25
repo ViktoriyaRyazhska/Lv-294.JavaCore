@@ -20,6 +20,5 @@ public class NegativeSquareException extends Exception{
 		return message;
 	}
 
-	
 
 }

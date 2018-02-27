@@ -26,11 +26,10 @@ public class Task1 {
     }
 
     private static double div(double a, double b) throws ArithmeticException {
-        double result = a / b;
         if (b == 0) {
             throw new ArithmeticException();
-        } else {
-            return result;
         }
+        return a / b;
+
     }
 }

@@ -1,0 +1,3 @@
+Number of lines in file1.txt. = 5
+  The longest line in file1.txt.. = qgqergqergqegqergqe
+ Yuriy Paliy 26.01.1973

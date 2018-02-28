@@ -73,11 +73,11 @@ public class Task3 {
 		}
 		System.out.println("Max line is " + (mini + 1));
 	}
-
+//Написала колобок, бо такого слова як у завданні моя програма б не знайшла
 	public static void findLine(List<String> list) {
 		for (String l : list) {
-			if (l.toLowerCase().contains("�������")) {
-				System.out.println("This line consict of word \"�������\" " + l);
+			if (l.toLowerCase().contains("êîëîáîê")) {
+				System.out.println("This line consict of word \"êîëîáîê\" " + l);
 			}
 		}
 	}

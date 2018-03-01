@@ -1,0 +1,3 @@
+The number of lines is 4
+I like codding in this lanquage and I hope in future I will be a good expert in Java.
+My name is Mariia Oleksiuk and my birthday date is 21 of September

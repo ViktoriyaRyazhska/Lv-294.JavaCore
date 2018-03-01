@@ -1,0 +1,31 @@
+The syntax of the Java Persistence Query Language (JPQL) is very similar to the syntax of SQL.
+Having a SQL like syntax in JPA queries is an important advantage because SQL is a very powerful
+query language and many developers are already familiar with it.
+
+The main difference between SQL and JPQL is that SQL works with relational database tables, 
+records and fields, whereas JPQL works with Java classes and objects. For example, a JPQL query 
+can retrieve and return entity objects rather than just field values from database tables, as with 
+SQL. That makes JPQL more object oriented friendly and easier to use in Java.
+
+JPQL Query Structure
+As with SQL, a JPQL SELECT query also consists of up to 6 clauses in the following format:
+
+SELECT ... FROM ...
+[WHERE ...]
+[GROUP BY ... [HAVING ...]]
+[ORDER BY ...]
+
+The first two clauses, SELECT and FROM are required in every retrieval query (update and delete 
+queries have a slightly different form). The other JPQL clauses, WHERE, GROUP BY, HAVING and 
+ORDER BY are optional.
+
+The structure of JPQL DELETE and UPDATE queries is simpler:
+
+DELETE FROM ... [WHERE ...]
+UPDATE ... SET ... [WHERE ...]
+
+Besides a few exceptions, JPQL is case insensitive. JPQL keywords, for example, can appear in 
+queries either in upper case (e.g. SELECT) or in lower case (e.g. select). The few exceptions 
+in which JPQL is case sensitive include mainly Java source elements such as names of entity classes 
+and persistent fields, which are case sensitive. In addition, string literals are also case sensitive 
+(e.g. "ORM" and "orm" are different values).

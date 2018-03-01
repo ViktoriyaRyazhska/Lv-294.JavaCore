@@ -1,0 +1,53 @@
+Name: Yuriy Mazur
+Birthday: 26.08.1985
+Contacts:
+skype: kurik1985
+contact phone number: +38 (067) 341-16-56
+e-mail: yuriy.mazur1985@gmail.com
+Summary of qualifications:
+Good knowledge of Java Core basics (IO, Collections, Generics,etc), familiar with multithreading;
+JDBC, JPA, Hibernate, MySQL, jQuery, Apache Tomcat, GIT.
+Maven, Spring Framework (Spring MVC and Spring Security);
+Responsible, fast learner and ready to gain new knowledge and improve current skills. 
+
+Technical skills:
+Programming languages: Java; 
+Technologies: XML, REST web services, familiar with AJAX, JSON;
+Operating Systems: Mac OS X,  Microsoft Windows 95/98/NT/2000/XP/Vista/7, Ubuntu;
+Business software: MS Office, MS Outlook;
+Development tools: Eclipse, GIT, IntelliJ IDEA;
+Professional Experience: 
+Private enterprise Vikonniy Kombinat 		November 2014 – February 2016    Lviv, Ukraine
+Sales manager
+Attracting new customers, wholesale sales, finances control.
+Maintenance and support of product designing software, custom windows designing, automation, store management.
+Entrepreneur Moroshan O.R.		February 2010 – July 2014    Lviv, Ukraine
+Sales manager
+Attracting new customers, wholesale sales, finances control.
+Maintenance and support of product designing software, custom windows designing, automation, store management.
+Entrepreneur Ovsennikova V.V.	           September 2007 – June 2008    Chervonograd, Ukraine
+photo lab operator
+Printing photos.
+Maintenance and support of digital photo lab.
+Education
+2016 – 2016            Logos IT Academy ,  Lviv, Ukraine; 
+130 academic hours course on 
+Programming Basics,
+ HTML/CSS, MySQL, 
+Java Core;
+Java Advanced (JDBC, Hibernate,  JPA, jQuery, Spring Framework);
+My training projects: 
+Java Core training course graduation project , link to project: https://github.com/yuramazur/BasicCinema
+Java Advanced training course graduation project , link to project: https://github.com/yuramazur/SpringMVC;
+
+2002 – 2007  Institute of Ecological Economics & Management (IEEM)                         Lviv, Ukraine;           
+is the youngest department of the UNFU , 
+Specialist Degree in Ecology and Environmental Protection;
+
+2000 – 2002    Lviv Physics and Mathematics Lyceum , Lviv, Ukraine;
+Languages
+Ukrainian – native language
+English – intermediet level
+
+
+

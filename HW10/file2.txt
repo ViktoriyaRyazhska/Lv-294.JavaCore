@@ -1,0 +1,8 @@
+Number of line in file1.txt : 53
+
+The longest line in file1.txt : 
+2002 � 2007  Institute of Ecological Economics & Management (IEEM)                         Lviv, Ukraine;           
+Name:
+ Yuriy Mazur
+Birthday:
+ 26.08.1985

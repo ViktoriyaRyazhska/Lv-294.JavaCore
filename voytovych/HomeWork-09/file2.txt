@@ -1,0 +1,5 @@
+Number of line in [file1.txt]: 51
+The longest line in [file1.txt]: 
+"Basic knowledge: Java EE (Servlets, JSP, EJB), JavaScript,  HTML 5/ CSS 3, XML (XLST, XSD)."
+Name: [ Ivan Voytovych]
+Birthday: [ 05.02.1983]

@@ -1,0 +1,51 @@
+Name: Ivan Voytovych
+Birthday: 05.02.1983
+Contacts
+phone number: +38 (063) 927-86-42
+e-mail: voytovych.sb@gmail.com
+
+Summary of qualifications
+Languages
+Good knowledge: Java SE 8.
+Basic knowledge: Java EE (Servlets, JSP, EJB), JavaScript,  HTML 5/ CSS 3, XML (XLST, XSD).
+
+Libraries and programming technologies
+Good knowledge: Spring Core.
+Basic knowledge: Spring (MVC, Security, Boot, Data),  JPA( Hibernate ), Log4j, 
+REST, jQuery, AJAX, Bootstrap, CSS with LESS, Maven, Git, JUnit, Mockito.
+
+Databases
+Basic knowledge: MySQL 5, MongoDB.
+
+Development tools
+Good knowledge: Eclipse.
+Basic knowledge: IntelliJ IDEA, Photoshop, Illustrator.
+
+Operating Systems 
+Microsoft Windows, Linux Ubuntu.
+
+Professional Experience
+Since 2006 I have been working as an engineer and designer in various as Ukrainian
+and foreign design and construction organizations. Currently work as a freelance 
+designer and engineer in the construction engineering services.
+
+Education
+Softserve IT Academy 
+Date: 11.04.2016 - 10.05.2016. 
+Description:  HTML5/ CSS3/ JavaScript Fundamentals.
+
+Computer Training Center “Logos” 
+Date: 01.09.2013 - 31.10.2013. 
+Description:  Java core.
+
+Bureau of computer technology
+Date: 01.06.2013 - 28.06.2013. 
+Description:  Basics of programming. 
+
+Kyiv National University of Construction and Architecture.
+2000 - 2006
+Qualification: I received a qualification of an engineer.
+
+Languages
+Ukrainian - native language
+English - intermediet level

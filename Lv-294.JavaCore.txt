@@ -2,12 +2,12 @@
                     class    if  loops  OOP  Collection String  Exception Thread, File
 
 Ira Shturyn           +       +    +     +        +        +        +          +
-Maxym Sydoriv         +       +    +     .        +        +        +          .
+Maxym Sydoriv         +       +    +     .        +        +        +          +
 Yura Mazur            +       +    +     +        +        +        +
-Voytovych             +       +    +     +        +        +        +
+Voytovych             +       +    +     +        +        +        +          +
 Mykola Boieru         +       +    +     +        +        +        +          +
 Rostyslav Beregiy     +            +     +        +                 +
-Mariia Oleksiuk       +       +    +     +        +        +        +          .
+Mariia Oleksiuk       +       +    +     +        +        +        +          +
 Halyna Monastyrska    +       .                                     .
 Saakyan               +
 Vlad Podolin          +       +     +    +        . 

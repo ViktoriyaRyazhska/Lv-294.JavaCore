@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <person>
+        <birthday>2000-01-01</birthday>
+        <city>New York</city>
+        <EMail>james@gmail.com</EMail>
+        <firstName>Antoine</firstName>
+        <lastName>Laurent</lastName>
+        <phone>1234567890</phone>
+        <postalCode>45678</postalCode>
+        <street>Central</street>
+    </person>
+    <person>
+        <birthday>2000-01-01</birthday>
+        <city>Chicago</city>
+        <EMail>smith@gmail.com</EMail>
+        <firstName>David</firstName>
+        <lastName>Smith</lastName>
+        <phone>1234567890</phone>
+        <postalCode>45678</postalCode>
+        <street>Miller</street>
+    </person>
+    <person>
+        <birthday>2000-01-01</birthday>
+        <city>Charleston</city>
+        <EMail>garcia@gmail.com</EMail>
+        <firstName>Maria</firstName>
+        <lastName>Hernandez</lastName>
+        <phone>1234567890</phone>
+        <postalCode>45678</postalCode>
+        <street>Madison</street>
+    </person>
+    <person>
+        <birthday>2000-01-01</birthday>
+        <city>Las Vegas</city>
+        <EMail>hernandez@gmail.com</EMail>
+        <firstName>Michael</firstName>
+        <lastName>Smith</lastName>
+        <phone>1234567890</phone>
+        <postalCode>45678</postalCode>
+        <street>Green</street>
+    </person>
+    <person>
+        <birthday>2000-01-01</birthday>
+        <city>Seattle</city>
+        <EMail>johnson@gmail.com</EMail>
+        <firstName>James</firstName>
+        <lastName>Johnson</lastName>
+        <phone>1234567890</phone>
+        <postalCode>45678</postalCode>
+        <street>Williams</street>
+    </person>
+</persons>

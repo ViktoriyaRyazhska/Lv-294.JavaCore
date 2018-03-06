@@ -24,36 +24,29 @@ public class UI extends JPanel
     public UI() {
         super(new BorderLayout());
         
-      // Create and populate the list model.
         listModel = new DefaultListModel();
         list1 = new JList(listModel);
         list1.setSize(100, 100);
         list1.setSelectionMode(
                 ListSelectionModel.SINGLE_INTERVAL_SELECTION);
 
-        //Create the log first, because the action listeners need to refer to it.
         log = new JTextArea(100,100);
         log.setMargin(new Insets(5,5,5,5));
         log.setEditable(false);
         JScrollPane logScrollPane = new JScrollPane(log);
         logScrollPane.add(list1);
         
-        //Create a file chooser
         fc = new JFileChooser();
         
         fc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 
-        //Create the Browse button.
         browsebutton = new JButton("Browse");
         browsebutton.addActionListener(this);
 
-
-        //For layout purposes, put the buttons in a separate panel
-        JPanel buttonPanel = new JPanel(); //use FlowLayout
+        JPanel buttonPanel = new JPanel(); 
         buttonPanel.add(browsebutton);
 
 
-        //Add the buttons and the list to this panel.
         add(buttonPanel, BorderLayout.PAGE_START);
         add(new JScrollPane(list1), BorderLayout.CENTER);
     }
@@ -61,7 +54,7 @@ public class UI extends JPanel
         
         public void actionPerformed(ActionEvent e) {
 
-            //Handle Browse button action.
+
             if (e.getSource() == browsebutton) {
             	
                 int returnVal = fc.showOpenDialog(UI.this);
@@ -69,11 +62,10 @@ public class UI extends JPanel
                 if (returnVal == JFileChooser.APPROVE_OPTION) {
                     File file = fc.getSelectedFile();
                     
-                    // Hashmap to store the duplicate files
+
                     Map<String, List<String>> lists = new HashMap<String, List<String>>();
                     Finder.find(lists, file);
                     
-                    //Results output
                     listModel.addElement("Duplicates in   " + file.getParent()+ "\\" + file.getName());
                     
                     for (List<String> list : lists.values()) {
@@ -98,9 +90,8 @@ public class UI extends JPanel
     					try {
     						Desktop.getDesktop().open(new File(str).getParentFile());
     					} catch (Exception e) {
-    						// Should not generate an exception!
     					}
-                	        } else if (evt.getClickCount() == 3) {   // Triple-click
+                	        } else if (evt.getClickCount() == 3) { 
                 	            int index = list.locationToIndex(evt.getPoint());
                 	            System.out.println(index);
                 	        }            	       
